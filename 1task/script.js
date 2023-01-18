@@ -3,4 +3,5 @@
 function js_style(){
     console.log("button clicked");
     document.getElementById("text").style.color = "blue";
+    document.getElementById("text").style.fontSize = "20px";
 };
