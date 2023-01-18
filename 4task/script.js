@@ -2,12 +2,12 @@
 
 function getAttributes(){
     console.log("button clicked");
-    let aHref = document.getElementById("w3r").href;
-    let aHreflang = document.getElementById("w3r").hreflang;
-    let aRel = document.getElementById("w3r").rel;
-    let aTarget = document.getElementById("w3r").target;
-    let aType = document.getElementById("w3r").type;
-    let result = "Link's href: "+aHref+"\nHreflang: "+aHreflang+"\nRel: "+aRel+"\nTarget: "+aTarget+"\nType: "+aType;
+    const href = document.getElementById("w3r").href;
+    const hreflang = document.getElementById("w3r").hreflang;
+    const rel = document.getElementById("w3r").rel;
+    const target = document.getElementById("w3r").target;
+    const type = document.getElementById("w3r").type;
+    const result = "Link's href: "+href+"\nHreflang: "+hreflang+"\nRel: "+rel+"\nTarget: "+target+"\nType: "+type;
     console.log(result);
     gainedValues.textContent = result;
 }

@@ -3,8 +3,8 @@
 function getFormvalue(){
     //stops page from reloading when form is submitted
     event.preventDefault();
-    let firstName = document.forms["form1"]["fname"].value;
-    let lastName = document.forms["form1"]["lname"].value;
+    const firstName = document.forms["form1"]["fname"].value;
+    const lastName = document.forms["form1"]["lname"].value;
     console.log("You have entered: "+firstName+" "+lastName);
     fullname.textContent = firstName+" "+lastName;
 
