@@ -1,16 +1,36 @@
 <!DOCTYPE html>
-<html><head><meta charset=utf-8 />
-<title>Change the content of a cell</title>
-</head><body>
-<table id="myTable" border="1">
-<tr><td>Row1 cell1</td>
-<td>Row1 cell2</td></tr>
-<tr><td>Row2 cell1</td>
-<td>Row2 cell2</td></tr>
-<tr><td>Row3 cell1</td>
-<td>Row3 cell2</td></tr>
-</table><form>
-<input type="button" onclick="changeContent()" value="Change content">
-</form>
-<script src="script.js"></script>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>Change the content of a cell</title>
+    <style>
+        input{display: block;}
+        table{margin: 10px;}
+    </style>
+</head>
+<body>
+    <form id="selectors">
+        <label>Row 0-2</label>
+        <input type="range" name="row" min="0" max="2"> <br>
+        <label>Column 0-1</label>
+        <input type="range" name="col" min="0" max="1"><br>
+        <label>Contents:</label>
+        <input type="text" name="content">
+        <input type="button" onclick="changeContent()" value="Change content">
+    </form>
+    <table id="myTable" border="1">
+        <tr>
+            <td>Row1 cell1</td>
+            <td>Row1 cell2</td>
+        </tr>
+        <tr>
+            <td>Row2 cell1</td>
+            <td>Row2 cell2</td>
+        </tr>
+        <tr>
+            <td>Row3 cell1</td>
+            <td>Row3 cell2</td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
 </body></html>
