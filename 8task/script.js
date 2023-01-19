@@ -2,6 +2,7 @@
 
 function removecolor(){
     const select = document.getElementById('colorSelect');
+    console.log("Removed value "+document.getElementById('colorSelect').options[select.selectedIndex].text);
     select.remove(select.selectedIndex);
-
+    
 }

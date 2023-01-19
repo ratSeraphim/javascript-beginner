@@ -6,5 +6,6 @@ function getOptions(){
     let drop = select.length + " options: ";
 
     const choices = (document.getElementById("mySelect").textContent);
+    console.log("Found values \n"+drop+choices)
     alert(drop + choices);
 }
