@@ -8,7 +8,7 @@ function highlightText(){
     });
 }
 
-function unhighlightText(){
+function unHighlightText(){
     console.log("Mouse left link");
     const bolded = document.querySelectorAll('b');
     bolded.forEach(element => {
